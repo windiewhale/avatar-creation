@@ -46,7 +46,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 
-    background-image: url(/img/wp5071690.jpg);
+    background-image: url(./img/wp5071690.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -204,15 +204,15 @@ h2 {
 }
 
 .male {
-    background-image: url(/img/male.jpg);
+    background-image: url(./img/male.jpg);
 }
 
 .female {
-    background-image: url(/img/female.jpg);
+    background-image: url(./img/female.jpg);
 }
 
 .neutral {
-    background-image: url(/img/both.jpg);
+    background-image: url(./img/both.jpg);
 }
 
 /* ---race--- */
@@ -231,16 +231,16 @@ h2 {
 }
 
 .fia {
-    background-image: url(/img/fia.jpg);
+    background-image: url(./img/fia.jpg);
 }
 
 .angyar {
-    background-image: url(/img/angyar.jpeg);
+    background-image: url(./img/angyar.jpeg);
 }
 
 .starlord {
     
-    background-image: url(/img/sl.jpg);
+    background-image: url(./img/sl.jpg);
 }
 
 
@@ -262,18 +262,18 @@ h2 {
 }
 
 .servant {
-    background-image: url(/img/servant.jpg);
+    background-image: url(./img/servant.jpg);
 }
 
 .mage{
-    background-image: url(/img/mage.jpg);
+    background-image: url(./img/mage.jpg);
 }
 
 .traveler {
-    background-image: url(/img/traveler.jpg);
+    background-image: url(./img/traveler.jpg);
 }
 
 .lord {
-    background-image: url(/img/lord.jpg);
+    background-image: url(./img/lord.jpg);
 }
 
