@@ -1,0 +1,279 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+box-sizing: border-box;
+background: transparent;
+font-family: inherit;
+}
+a{
+text-decoration: none;
+}
+a img {
+border: none;
+}
+
+button,
+a {
+cursor: pointer;
+color: inherit;
+}
+
+textarea {
+resize: none;
+}
+
+button,
+textarea,
+select {
+appearance: none !important;
+border-radius: 0;
+}
+
+/*----------------------------end of css reset-----------------------------------*/
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url(/img/wp5071690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 35vw;
+    height: 70vh;
+    
+    background: radial-gradient(ellipse,#023592 0%, #072e8300 85%);
+    
+    font-size: 30px;
+    padding: 20px;
+    color: #06c258;
+    position: relative;
+    
+}
+
+h1 {
+    
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 60px;
+    letter-spacing: 0.04em;
+    color: #06c258;
+    text-shadow: 3px 3px 3px #072e83;
+}
+
+#name {
+    
+    width: 40%;
+    height: 55px;
+    
+    text-align: center;
+    
+    font-size: 28px;
+    color: #06c258;
+    background-color: #072e8394;
+    
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+
+}  
+
+#name::placeholder{
+    color: #06c258;
+}
+
+label {
+   
+    font-size: 35px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: 3px 3px 3px #072e83;
+    margin-bottom: 10px;
+}
+
+select {
+
+    width: 30%;
+    min-width: fit-content;
+    height: 50px;
+    background-color: #072e83;
+    text-align: center;
+    font-size: 25px;
+    color: #06c258;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+}
+
+
+.placeholder-option {
+    display: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+
+
+#avatar {
+    width: 35vw;
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 15% auto 25%;
+    gap: 10px;
+
+    background: radial-gradient(ellipse,#023592 0%, #072e8300 72%);
+
+}
+ 
+h2 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    align-self: end;
+    
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 0.04em;
+   /*  color: #9454ad; */
+    color: #f2663f;
+    text-shadow: 6px 6px 6px #40f3bd;
+}
+
+#charpic {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    position: relative;
+}
+
+/* -------display pictures according selected values--------- */
+
+/* ---display character--- */
+
+#charpic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+
+    box-sizing: content-box;
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, #f2663f , #00C853);
+    
+}
+
+/* ---gender--- */
+.male, 
+.female,
+.neutral { 
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, #3464e9 , #00C853);
+    
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.male {
+    background-image: url(/img/male.jpg);
+}
+
+.female {
+    background-image: url(/img/female.jpg);
+}
+
+.neutral {
+    background-image: url(/img/both.jpg);
+}
+
+/* ---race--- */
+.angyar,
+.fia,
+.starlord {
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, #3464e9 , #00C853);
+
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fia {
+    background-image: url(/img/fia.jpg);
+}
+
+.angyar {
+    background-image: url(/img/angyar.jpeg);
+}
+
+.starlord {
+    
+    background-image: url(/img/sl.jpg);
+}
+
+
+
+/* ---class/level--- */
+.servant, 
+.mage, 
+.traveler,
+.lord {
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to bottom, #3464e9 , #00C853);
+  
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.servant {
+    background-image: url(/img/servant.jpg);
+}
+
+.mage{
+    background-image: url(/img/mage.jpg);
+}
+
+.traveler {
+    background-image: url(/img/traveler.jpg);
+}
+
+.lord {
+    background-image: url(/img/lord.jpg);
+}
+
